@@ -377,13 +377,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(PLATFORM_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-# Telephony
-PRODUCT_PACKAGES += \
-	telephony-ext
-
-PRODUCT_BOOT_JARS += \
-	telephony-ext
-
 # TextClassifier
 PRODUCT_PACKAGES += \
 	textclassifier.bundle1
