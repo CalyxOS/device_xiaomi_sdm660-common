@@ -460,8 +460,5 @@ PRODUCT_PACKAGES += \
 	org.lineageos.keyhandler
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-  WfdCommon
-
 PRODUCT_PACKAGES += \
 	libnl
