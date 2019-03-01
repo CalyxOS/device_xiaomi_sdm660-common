@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.common@4.0 \
 	android.hardware.audio.common@4.0-util \
 	audio.a2dp.default \
-	audio.primary.sdm660 \
+#	audio.primary.sdm660 \
 	audio.r_submix.default \
 	audio.usb.default \
 	libaudio-resampler \
