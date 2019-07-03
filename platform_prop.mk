@@ -63,7 +63,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	bt.max.hfpclient.connections=1 \
 	persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
-	vendor.qcom.bluetooth.soc=cherokee
+	vendor.qcom.bluetooth.soc=cherokee \
+	ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Brightness
 PRODUCT_PROPERTY_OVERRIDES += \
