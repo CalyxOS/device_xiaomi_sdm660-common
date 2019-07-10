@@ -455,10 +455,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	XiaomiParts
 
-# KeyHandler
-PRODUCT_PACKAGES += \
-	org.lineageos.keyhandler
-
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
 	libnl
