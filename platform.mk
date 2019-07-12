@@ -341,6 +341,9 @@ PRODUCT_PACKAGES += \
 	init.performance.sdm660.rc \
 	ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+	$(PLATFORM_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
+
 # RCS
 PRODUCT_PACKAGES += \
 	rcs_service_aidl \
