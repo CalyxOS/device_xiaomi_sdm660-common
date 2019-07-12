@@ -320,6 +320,10 @@ PRODUCT_PACKAGES += \
     libregistermsext \
     mediametrics
 
+# Messaging
+PRODUCT_PACKAGES += \
+    messaging
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
