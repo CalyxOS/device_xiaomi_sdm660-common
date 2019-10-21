@@ -153,9 +153,6 @@ HEALTHD_USE_BATTERY_INFO := true
 # CNE and DPM
 BOARD_USES_QCNE := true
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Display
 BOARD_USES_ADRENO := true
 TARGET_USES_HWC2 := true
