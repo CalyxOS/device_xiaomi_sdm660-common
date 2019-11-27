@@ -258,10 +258,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,20 \
     ro.vendor.use_data_netmgrd=true \
     telephony.lteOnCdmaDevice=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
     ro.telephony.iwlan_operation_mode=legacy
-    persist.sys.fflag.override.settings_network_and_internet_v2=true \
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
