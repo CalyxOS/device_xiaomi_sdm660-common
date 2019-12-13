@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
