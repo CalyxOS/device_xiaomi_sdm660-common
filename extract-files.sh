@@ -74,7 +74,9 @@ function blob_fixup() {
             sed -i 's|/product/framework/qcrilhook.jar|/system_ext/framework/qcrilhook.jar|g' "${2}"
             ;;
         system_ext/lib64/libdpmframework.so)
-            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            for LIBSHIM_DPMFRAMEWORK in $(grep -L "libshim_dpmframework.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
+            done
             ;;
     esac
 }
@@ -85,6 +87,7 @@ if [ -z "${ONLY_TARGET}" ] && [ -z "${ONLY_DEVICE_COMMON}" ]; then
 
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
     extract "${MY_DIR}/proprietary-files-fm.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files-ir.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -z "${ONLY_TARGET}" ] && [ -s "${MY_DIR}/../${DEVICE_SPECIFIED_COMMON}/proprietary-files.txt" ];then
